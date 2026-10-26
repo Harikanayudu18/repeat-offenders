@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Environment and local data
+.env
+*.db
+*.sqlite
+*.sqlite3
+private/
+
+# Model weights
+*.ckpt
+
+# Node / frontend build output
+node_modules/
+frontend/dist/
+dist/
+coverage/
+
+# Evaluation backups
+eval/final_lock.json.bak
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

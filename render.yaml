@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: repeat-offenders-demo
+    runtime: static
+    rootDir: frontend
+    buildCommand: npm ci && npm run build
+    staticPublishPath: dist
+    envVars:
+      - key: VITE_DEMO_MODE
+        value: "true"
+      - key: NODE_VERSION
+        value: "20"

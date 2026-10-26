@@ -1,0 +1,11 @@
+services:
+  app:
+    build: .
+    ports: ["127.0.0.1:8000:8000"]   # local only; never expose publicly without authentication
+    volumes: ["ro-data:/data"]
+    environment:
+      OLLAMA_ENDPOINT: http://host.docker.internal:11434
+      OLLAMA_MODEL: gemma3:4b
+    extra_hosts: ["host.docker.internal:host-gateway"]
+volumes:
+  ro-data: {}

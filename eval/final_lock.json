@@ -1,0 +1,294 @@
+{
+ "v1:f5e74678afeaa8d00ec5bc2697d70616b8f12b4e257dada67503206129a083aa": {
+  "data_fingerprint": "f5e74678afeaa8d00ec5bc2697d70616b8f12b4e257dada67503206129a083aa",
+  "n_years": 9,
+  "years": [
+   2016,
+   2017,
+   2018,
+   2019,
+   2020,
+   2021,
+   2022,
+   2023,
+   2024
+  ],
+  "status": "ok",
+  "which": "final",
+  "ks": [
+   3,
+   5,
+   8
+  ],
+  "final_holdout_year": 2024,
+  "min_history_years": 3,
+  "folds": [
+   {
+    "forecast_year": 2024,
+    "is_final_holdout": true,
+    "training_source_years": [
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022,
+     2023
+    ],
+    "training_target_years": [
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022,
+     2023
+    ],
+    "n_training_rows": 196,
+    "n_topics": 28,
+    "n_features": 15,
+    "held_out_total_marks": 80.0,
+    "models": {
+     "naive_frequency": {
+      "status": "ok",
+      "metrics": {
+       "3": {
+        "covered_marks": 24.0,
+        "total_marks": 80.0,
+        "coverage": 0.3,
+        "precision": 1.0,
+        "recall": 0.23076923076923078
+       },
+       "5": {
+        "covered_marks": 32.0,
+        "total_marks": 80.0,
+        "coverage": 0.4,
+        "precision": 0.8,
+        "recall": 0.3076923076923077
+       },
+       "8": {
+        "covered_marks": 50.0,
+        "total_marks": 80.0,
+        "coverage": 0.625,
+        "precision": 0.875,
+        "recall": 0.5384615384615384
+       }
+      },
+      "top_ranking": [
+       "T06",
+       "T26",
+       "T13",
+       "T15",
+       "T16",
+       "T19",
+       "T23",
+       "T24"
+      ],
+      "duration_s": 0.0011339430000001371
+     },
+     "recency_weighted": {
+      "status": "ok",
+      "metrics": {
+       "3": {
+        "covered_marks": 24.0,
+        "total_marks": 80.0,
+        "coverage": 0.3,
+        "precision": 1.0,
+        "recall": 0.23076923076923078
+       },
+       "5": {
+        "covered_marks": 38.0,
+        "total_marks": 80.0,
+        "coverage": 0.475,
+        "precision": 1.0,
+        "recall": 0.38461538461538464
+       },
+       "8": {
+        "covered_marks": 46.0,
+        "total_marks": 80.0,
+        "coverage": 0.575,
+        "precision": 0.75,
+        "recall": 0.46153846153846156
+       }
+      },
+      "top_ranking": [
+       "T06",
+       "T26",
+       "T13",
+       "T19",
+       "T09",
+       "T15",
+       "T21",
+       "T16"
+      ],
+      "duration_s": 0.0010392379999997203
+     },
+     "logistic_regression": {
+      "status": "ok",
+      "metrics": {
+       "3": {
+        "covered_marks": 24.0,
+        "total_marks": 80.0,
+        "coverage": 0.3,
+        "precision": 1.0,
+        "recall": 0.23076923076923078
+       },
+       "5": {
+        "covered_marks": 38.0,
+        "total_marks": 80.0,
+        "coverage": 0.475,
+        "precision": 1.0,
+        "recall": 0.38461538461538464
+       },
+       "8": {
+        "covered_marks": 48.4,
+        "total_marks": 80.0,
+        "coverage": 0.605,
+        "precision": 0.875,
+        "recall": 0.5384615384615384
+       }
+      },
+      "top_ranking": [
+       "T26",
+       "T06",
+       "T13",
+       "T19",
+       "T23",
+       "T15",
+       "T16",
+       "T12"
+      ],
+      "duration_s": 0.0074950110000004955
+     },
+     "tabpfn": {
+      "status": "unavailable",
+      "code": "package_missing",
+      "message": "tabpfn package not installed (pip install tabpfn; see docs/MODEL_SETUP.md)"
+     },
+     "random": {
+      "status": "ok",
+      "n_seeds": 20,
+      "metrics": {
+       "3": {
+        "coverage": 0.09375,
+        "coverage_std": 0.062005544106958695,
+        "precision": 0.3833333333333333,
+        "total_marks": 80.0
+       },
+       "5": {
+        "coverage": 0.16775,
+        "coverage_std": 0.0729121903387904,
+        "precision": 0.43000000000000005,
+        "total_marks": 80.0
+       },
+       "8": {
+        "coverage": 0.31100000000000005,
+        "coverage_std": 0.1124788869077215,
+        "precision": 0.5,
+        "total_marks": 80.0
+       }
+      }
+     }
+    }
+   }
+  ],
+  "aggregate": {
+   "naive_frequency": {
+    "n_folds": 1,
+    "n_folds_total": 1,
+    "folds_years": [
+     2024
+    ],
+    "by_k": {
+     "3": {
+      "mean_coverage": 0.3,
+      "std_coverage": 0.0
+     },
+     "5": {
+      "mean_coverage": 0.4,
+      "std_coverage": 0.0
+     },
+     "8": {
+      "mean_coverage": 0.625,
+      "std_coverage": 0.0
+     }
+    }
+   },
+   "recency_weighted": {
+    "n_folds": 1,
+    "n_folds_total": 1,
+    "folds_years": [
+     2024
+    ],
+    "by_k": {
+     "3": {
+      "mean_coverage": 0.3,
+      "std_coverage": 0.0
+     },
+     "5": {
+      "mean_coverage": 0.475,
+      "std_coverage": 0.0
+     },
+     "8": {
+      "mean_coverage": 0.575,
+      "std_coverage": 0.0
+     }
+    }
+   },
+   "logistic_regression": {
+    "n_folds": 1,
+    "n_folds_total": 1,
+    "folds_years": [
+     2024
+    ],
+    "by_k": {
+     "3": {
+      "mean_coverage": 0.3,
+      "std_coverage": 0.0
+     },
+     "5": {
+      "mean_coverage": 0.475,
+      "std_coverage": 0.0
+     },
+     "8": {
+      "mean_coverage": 0.605,
+      "std_coverage": 0.0
+     }
+    }
+   },
+   "tabpfn": {
+    "n_folds": 0,
+    "n_folds_total": 1,
+    "folds_years": [],
+    "by_k": null
+   },
+   "random": {
+    "n_folds": 1,
+    "n_folds_total": 1,
+    "folds_years": [
+     2024
+    ],
+    "by_k": {
+     "3": {
+      "mean_coverage": 0.09375,
+      "std_coverage": 0.0
+     },
+     "5": {
+      "mean_coverage": 0.16775,
+      "std_coverage": 0.0
+     },
+     "8": {
+      "mean_coverage": 0.31100000000000005,
+      "std_coverage": 0.0
+     }
+    }
+   }
+  },
+  "tabpfn_status": {
+   "available": false,
+   "code": "package_missing",
+   "message": "tabpfn package not installed (pip install tabpfn; see docs/MODEL_SETUP.md)"
+  }
+ }
+}

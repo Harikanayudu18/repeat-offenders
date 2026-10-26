@@ -1,0 +1,1253 @@
+{
+ "synthetic": true,
+ "eval_version": "v1",
+ "timestamp_utc": "2026-10-26T03:33:49.818164+00:00",
+ "runtime_s": 0.49,
+ "final_reused_from_lock": false,
+ "dev": {
+  "data_fingerprint": "f5e74678afeaa8d00ec5bc2697d70616b8f12b4e257dada67503206129a083aa",
+  "n_years": 9,
+  "years": [
+   2016,
+   2017,
+   2018,
+   2019,
+   2020,
+   2021,
+   2022,
+   2023,
+   2024
+  ],
+  "status": "ok",
+  "which": "dev",
+  "ks": [
+   3,
+   5,
+   8
+  ],
+  "final_holdout_year": 2024,
+  "min_history_years": 3,
+  "folds": [
+   {
+    "forecast_year": 2019,
+    "is_final_holdout": false,
+    "training_source_years": [
+     2016,
+     2017,
+     2018
+    ],
+    "training_target_years": [
+     2017,
+     2018
+    ],
+    "n_training_rows": 56,
+    "n_topics": 28,
+    "n_features": 15,
+    "held_out_total_marks": 58.0,
+    "models": {
+     "naive_frequency": {
+      "status": "ok",
+      "metrics": {
+       "3": {
+        "covered_marks": 6.0,
+        "total_marks": 58.0,
+        "coverage": 0.10344827586206896,
+        "precision": 0.3333333333333333,
+        "recall": 0.1111111111111111
+       },
+       "5": {
+        "covered_marks": 6.0,
+        "total_marks": 58.0,
+        "coverage": 0.10344827586206896,
+        "precision": 0.2,
+        "recall": 0.1111111111111111
+       },
+       "8": {
+        "covered_marks": 22.0,
+        "total_marks": 58.0,
+        "coverage": 0.3793103448275862,
+        "precision": 0.375,
+        "recall": 0.3333333333333333
+       }
+      },
+      "top_ranking": [
+       "T02",
+       "T06",
+       "T13",
+       "T15",
+       "T23",
+       "T24",
+       "T26",
+       "T28"
+      ],
+      "duration_s": 0.0011348070000005706
+     },
+     "recency_weighted": {
+      "status": "ok",
+      "metrics": {
+       "3": {
+        "covered_marks": 6.0,
+        "total_marks": 58.0,
+        "coverage": 0.10344827586206896,
+        "precision": 0.3333333333333333,
+        "recall": 0.1111111111111111
+       },
+       "5": {
+        "covered_marks": 6.0,
+        "total_marks": 58.0,
+        "coverage": 0.10344827586206896,
+        "precision": 0.2,
+        "recall": 0.1111111111111111
+       },
+       "8": {
+        "covered_marks": 22.0,
+        "total_marks": 58.0,
+        "coverage": 0.3793103448275862,
+        "precision": 0.375,
+        "recall": 0.3333333333333333
+       }
+      },
+      "top_ranking": [
+       "T02",
+       "T06",
+       "T13",
+       "T15",
+       "T23",
+       "T24",
+       "T26",
+       "T28"
+      ],
+      "duration_s": 0.0009103050000005553
+     },
+     "logistic_regression": {
+      "status": "ok",
+      "metrics": {
+       "3": {
+        "covered_marks": 12.0,
+        "total_marks": 58.0,
+        "coverage": 0.20689655172413793,
+        "precision": 0.6666666666666666,
+        "recall": 0.2222222222222222
+       },
+       "5": {
+        "covered_marks": 22.0,
+        "total_marks": 58.0,
+        "coverage": 0.3793103448275862,
+        "precision": 0.6,
+        "recall": 0.3333333333333333
+       },
+       "8": {
+        "covered_marks": 22.0,
+        "total_marks": 58.0,
+        "coverage": 0.3793103448275862,
+        "precision": 0.375,
+        "recall": 0.3333333333333333
+       }
+      },
+      "top_ranking": [
+       "T15",
+       "T24",
+       "T06",
+       "T26",
+       "T13",
+       "T23",
+       "T28",
+       "T02"
+      ],
+      "duration_s": 0.07435123900000029
+     },
+     "tabpfn": {
+      "status": "unavailable",
+      "code": "package_missing",
+      "message": "tabpfn package not installed (pip install tabpfn; see docs/MODEL_SETUP.md)"
+     },
+     "random": {
+      "status": "ok",
+      "n_seeds": 20,
+      "metrics": {
+       "3": {
+        "coverage": 0.10517241379310345,
+        "coverage_std": 0.0947334956401114,
+        "precision": 0.31666666666666665,
+        "total_marks": 58.0
+       },
+       "5": {
+        "coverage": 0.17758620689655172,
+        "coverage_std": 0.12156089473842982,
+        "precision": 0.33,
+        "total_marks": 58.0
+       },
+       "8": {
+        "coverage": 0.2741379310344828,
+        "coverage_std": 0.11717797474169792,
+        "precision": 0.31875,
+        "total_marks": 58.0
+       }
+      }
+     }
+    }
+   },
+   {
+    "forecast_year": 2020,
+    "is_final_holdout": false,
+    "training_source_years": [
+     2016,
+     2017,
+     2018,
+     2019
+    ],
+    "training_target_years": [
+     2017,
+     2018,
+     2019
+    ],
+    "n_training_rows": 84,
+    "n_topics": 28,
+    "n_features": 15,
+    "held_out_total_marks": 74.0,
+    "models": {
+     "naive_frequency": {
+      "status": "ok",
+      "metrics": {
+       "3": {
+        "covered_marks": 16.0,
+        "total_marks": 74.0,
+        "coverage": 0.21621621621621623,
+        "precision": 0.6666666666666666,
+        "recall": 0.15384615384615385
+       },
+       "5": {
+        "covered_marks": 19.2,
+        "total_marks": 74.0,
+        "coverage": 0.2594594594594595,
+        "precision": 0.6,
+        "recall": 0.23076923076923078
+       },
+       "8": {
+        "covered_marks": 37.2,
+        "total_marks": 74.0,
+        "coverage": 0.5027027027027028,
+        "precision": 0.75,
+        "recall": 0.46153846153846156
+       }
+      },
+      "top_ranking": [
+       "T06",
+       "T24",
+       "T26",
+       "T02",
+       "T05",
+       "T13",
+       "T15",
+       "T16"
+      ],
+      "duration_s": 0.0018865339999996067
+     },
+     "recency_weighted": {
+      "status": "ok",
+      "metrics": {
+       "3": {
+        "covered_marks": 16.0,
+        "total_marks": 74.0,
+        "coverage": 0.21621621621621623,
+        "precision": 0.6666666666666666,
+        "recall": 0.15384615384615385
+       },
+       "5": {
+        "covered_marks": 22.0,
+        "total_marks": 74.0,
+        "coverage": 0.2972972972972973,
+        "precision": 0.6,
+        "recall": 0.23076923076923078
+       },
+       "8": {
+        "covered_marks": 22.0,
+        "total_marks": 74.0,
+        "coverage": 0.2972972972972973,
+        "precision": 0.375,
+        "recall": 0.23076923076923078
+       }
+      },
+      "top_ranking": [
+       "T06",
+       "T24",
+       "T26",
+       "T05",
+       "T16",
+       "T12",
+       "T14",
+       "T04"
+      ],
+      "duration_s": 0.0013061930000004551
+     },
+     "logistic_regression": {
+      "status": "ok",
+      "metrics": {
+       "3": {
+        "covered_marks": 12.0,
+        "total_marks": 74.0,
+        "coverage": 0.16216216216216217,
+        "precision": 0.6666666666666666,
+        "recall": 0.15384615384615385
+       },
+       "5": {
+        "covered_marks": 12.0,
+        "total_marks": 74.0,
+        "coverage": 0.16216216216216217,
+        "precision": 0.4,
+        "recall": 0.15384615384615385
+       },
+       "8": {
+        "covered_marks": 23.2,
+        "total_marks": 74.0,
+        "coverage": 0.31351351351351353,
+        "precision": 0.5,
+        "recall": 0.3076923076923077
+       }
+      },
+      "top_ranking": [
+       "T26",
+       "T28",
+       "T23",
+       "T05",
+       "T24",
+       "T02",
+       "T13",
+       "T14"
+      ],
+      "duration_s": 0.007682574999999581
+     },
+     "tabpfn": {
+      "status": "unavailable",
+      "code": "package_missing",
+      "message": "tabpfn package not installed (pip install tabpfn; see docs/MODEL_SETUP.md)"
+     },
+     "random": {
+      "status": "ok",
+      "n_seeds": 20,
+      "metrics": {
+       "3": {
+        "coverage": 0.10486486486486486,
+        "coverage_std": 0.0623943958076025,
+        "precision": 0.4666666666666666,
+        "total_marks": 74.0
+       },
+       "5": {
+        "coverage": 0.1610810810810811,
+        "coverage_std": 0.08851671131009177,
+        "precision": 0.43,
+        "total_marks": 74.0
+       },
+       "8": {
+        "coverage": 0.28351351351351356,
+        "coverage_std": 0.11391787694691954,
+        "precision": 0.4625,
+        "total_marks": 74.0
+       }
+      }
+     }
+    }
+   },
+   {
+    "forecast_year": 2021,
+    "is_final_holdout": false,
+    "training_source_years": [
+     2016,
+     2017,
+     2018,
+     2019,
+     2020
+    ],
+    "training_target_years": [
+     2017,
+     2018,
+     2019,
+     2020
+    ],
+    "n_training_rows": 112,
+    "n_topics": 28,
+    "n_features": 15,
+    "held_out_total_marks": 56.0,
+    "models": {
+     "naive_frequency": {
+      "status": "ok",
+      "metrics": {
+       "3": {
+        "covered_marks": 10.4,
+        "total_marks": 56.0,
+        "coverage": 0.18571428571428572,
+        "precision": 0.6666666666666666,
+        "recall": 0.2
+       },
+       "5": {
+        "covered_marks": 14.0,
+        "total_marks": 56.0,
+        "coverage": 0.25,
+        "precision": 0.6,
+        "recall": 0.3
+       },
+       "8": {
+        "covered_marks": 32.0,
+        "total_marks": 56.0,
+        "coverage": 0.5714285714285714,
+        "precision": 0.75,
+        "recall": 0.6
+       }
+      },
+      "top_ranking": [
+       "T06",
+       "T26",
+       "T02",
+       "T13",
+       "T15",
+       "T16",
+       "T23",
+       "T24"
+      ],
+      "duration_s": 0.0009392869999995668
+     },
+     "recency_weighted": {
+      "status": "ok",
+      "metrics": {
+       "3": {
+        "covered_marks": 18.4,
+        "total_marks": 56.0,
+        "coverage": 0.32857142857142857,
+        "precision": 1.0,
+        "recall": 0.3
+       },
+       "5": {
+        "covered_marks": 18.4,
+        "total_marks": 56.0,
+        "coverage": 0.32857142857142857,
+        "precision": 0.6,
+        "recall": 0.3
+       },
+       "8": {
+        "covered_marks": 26.0,
+        "total_marks": 56.0,
+        "coverage": 0.4642857142857143,
+        "precision": 0.625,
+        "recall": 0.5
+       }
+      },
+      "top_ranking": [
+       "T06",
+       "T26",
+       "T16",
+       "T09",
+       "T02",
+       "T13",
+       "T15",
+       "T23"
+      ],
+      "duration_s": 0.0010582889999994904
+     },
+     "logistic_regression": {
+      "status": "ok",
+      "metrics": {
+       "3": {
+        "covered_marks": 8.4,
+        "total_marks": 56.0,
+        "coverage": 0.15,
+        "precision": 0.6666666666666666,
+        "recall": 0.2
+       },
+       "5": {
+        "covered_marks": 22.4,
+        "total_marks": 56.0,
+        "coverage": 0.39999999999999997,
+        "precision": 0.8,
+        "recall": 0.4
+       },
+       "8": {
+        "covered_marks": 30.0,
+        "total_marks": 56.0,
+        "coverage": 0.5357142857142857,
+        "precision": 0.75,
+        "recall": 0.6
+       }
+      },
+      "top_ranking": [
+       "T24",
+       "T28",
+       "T06",
+       "T26",
+       "T05",
+       "T13",
+       "T14",
+       "T23"
+      ],
+      "duration_s": 0.007928021000000562
+     },
+     "tabpfn": {
+      "status": "unavailable",
+      "code": "package_missing",
+      "message": "tabpfn package not installed (pip install tabpfn; see docs/MODEL_SETUP.md)"
+     },
+     "random": {
+      "status": "ok",
+      "n_seeds": 20,
+      "metrics": {
+       "3": {
+        "coverage": 0.10499999999999998,
+        "coverage_std": 0.05683398667009316,
+        "precision": 0.33333333333333326,
+        "total_marks": 56.0
+       },
+       "5": {
+        "coverage": 0.16999999999999998,
+        "coverage_std": 0.08032459658365257,
+        "precision": 0.33000000000000007,
+        "total_marks": 56.0
+       },
+       "8": {
+        "coverage": 0.2957142857142857,
+        "coverage_std": 0.09890729528818634,
+        "precision": 0.38125,
+        "total_marks": 56.0
+       }
+      }
+     }
+    }
+   },
+   {
+    "forecast_year": 2022,
+    "is_final_holdout": false,
+    "training_source_years": [
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021
+    ],
+    "training_target_years": [
+     2017,
+     2018,
+     2019,
+     2020,
+     2021
+    ],
+    "n_training_rows": 140,
+    "n_topics": 28,
+    "n_features": 15,
+    "held_out_total_marks": 50.0,
+    "models": {
+     "naive_frequency": {
+      "status": "ok",
+      "metrics": {
+       "3": {
+        "covered_marks": 15.2,
+        "total_marks": 50.0,
+        "coverage": 0.304,
+        "precision": 1.0,
+        "recall": 0.375
+       },
+       "5": {
+        "covered_marks": 15.2,
+        "total_marks": 50.0,
+        "coverage": 0.304,
+        "precision": 0.6,
+        "recall": 0.375
+       },
+       "8": {
+        "covered_marks": 15.2,
+        "total_marks": 50.0,
+        "coverage": 0.304,
+        "precision": 0.375,
+        "recall": 0.375
+       }
+      },
+      "top_ranking": [
+       "T06",
+       "T26",
+       "T13",
+       "T16",
+       "T23",
+       "T24",
+       "T02",
+       "T05"
+      ],
+      "duration_s": 0.001155752999999926
+     },
+     "recency_weighted": {
+      "status": "ok",
+      "metrics": {
+       "3": {
+        "covered_marks": 12.0,
+        "total_marks": 50.0,
+        "coverage": 0.24,
+        "precision": 0.6666666666666666,
+        "recall": 0.25
+       },
+       "5": {
+        "covered_marks": 15.2,
+        "total_marks": 50.0,
+        "coverage": 0.304,
+        "precision": 0.6,
+        "recall": 0.375
+       },
+       "8": {
+        "covered_marks": 25.2,
+        "total_marks": 50.0,
+        "coverage": 0.504,
+        "precision": 0.5,
+        "recall": 0.5
+       }
+      },
+      "top_ranking": [
+       "T06",
+       "T26",
+       "T16",
+       "T13",
+       "T23",
+       "T19",
+       "T24",
+       "T05"
+      ],
+      "duration_s": 0.0017342270000000326
+     },
+     "logistic_regression": {
+      "status": "ok",
+      "metrics": {
+       "3": {
+        "covered_marks": 8.0,
+        "total_marks": 50.0,
+        "coverage": 0.16,
+        "precision": 0.3333333333333333,
+        "recall": 0.125
+       },
+       "5": {
+        "covered_marks": 20.0,
+        "total_marks": 50.0,
+        "coverage": 0.4,
+        "precision": 0.6,
+        "recall": 0.375
+       },
+       "8": {
+        "covered_marks": 30.0,
+        "total_marks": 50.0,
+        "coverage": 0.6,
+        "precision": 0.5,
+        "recall": 0.5
+       }
+      },
+      "top_ranking": [
+       "T26",
+       "T16",
+       "T24",
+       "T06",
+       "T15",
+       "T02",
+       "T23",
+       "T19"
+      ],
+      "duration_s": 0.008551454000000014
+     },
+     "tabpfn": {
+      "status": "unavailable",
+      "code": "package_missing",
+      "message": "tabpfn package not installed (pip install tabpfn; see docs/MODEL_SETUP.md)"
+     },
+     "random": {
+      "status": "ok",
+      "n_seeds": 20,
+      "metrics": {
+       "3": {
+        "coverage": 0.0952,
+        "coverage_std": 0.10134771827722613,
+        "precision": 0.25,
+        "total_marks": 50.0
+       },
+       "5": {
+        "coverage": 0.158,
+        "coverage_std": 0.12198032628256081,
+        "precision": 0.24000000000000005,
+        "total_marks": 50.0
+       },
+       "8": {
+        "coverage": 0.33080000000000004,
+        "coverage_std": 0.14074714917183936,
+        "precision": 0.31875,
+        "total_marks": 50.0
+       }
+      }
+     }
+    }
+   },
+   {
+    "forecast_year": 2023,
+    "is_final_holdout": false,
+    "training_source_years": [
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022
+    ],
+    "training_target_years": [
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022
+    ],
+    "n_training_rows": 168,
+    "n_topics": 28,
+    "n_features": 15,
+    "held_out_total_marks": 76.0,
+    "models": {
+     "naive_frequency": {
+      "status": "ok",
+      "metrics": {
+       "3": {
+        "covered_marks": 28.0,
+        "total_marks": 76.0,
+        "coverage": 0.3684210526315789,
+        "precision": 1.0,
+        "recall": 0.25
+       },
+       "5": {
+        "covered_marks": 38.8,
+        "total_marks": 76.0,
+        "coverage": 0.5105263157894736,
+        "precision": 1.0,
+        "recall": 0.4166666666666667
+       },
+       "8": {
+        "covered_marks": 58.0,
+        "total_marks": 76.0,
+        "coverage": 0.7631578947368421,
+        "precision": 1.0,
+        "recall": 0.6666666666666666
+       }
+      },
+      "top_ranking": [
+       "T06",
+       "T26",
+       "T13",
+       "T15",
+       "T16",
+       "T19",
+       "T23",
+       "T24"
+      ],
+      "duration_s": 0.0009764429999998825
+     },
+     "recency_weighted": {
+      "status": "ok",
+      "metrics": {
+       "3": {
+        "covered_marks": 28.0,
+        "total_marks": 76.0,
+        "coverage": 0.3684210526315789,
+        "precision": 1.0,
+        "recall": 0.25
+       },
+       "5": {
+        "covered_marks": 34.0,
+        "total_marks": 76.0,
+        "coverage": 0.4473684210526316,
+        "precision": 0.8,
+        "recall": 0.3333333333333333
+       },
+       "8": {
+        "covered_marks": 47.6,
+        "total_marks": 76.0,
+        "coverage": 0.6263157894736843,
+        "precision": 0.875,
+        "recall": 0.5833333333333334
+       }
+      },
+      "top_ranking": [
+       "T06",
+       "T26",
+       "T13",
+       "T19",
+       "T12",
+       "T09",
+       "T15",
+       "T21"
+      ],
+      "duration_s": 0.0009823969999995796
+     },
+     "logistic_regression": {
+      "status": "ok",
+      "metrics": {
+       "3": {
+        "covered_marks": 22.8,
+        "total_marks": 76.0,
+        "coverage": 0.3,
+        "precision": 1.0,
+        "recall": 0.25
+       },
+       "5": {
+        "covered_marks": 28.8,
+        "total_marks": 76.0,
+        "coverage": 0.37894736842105264,
+        "precision": 0.8,
+        "recall": 0.3333333333333333
+       },
+       "8": {
+        "covered_marks": 52.0,
+        "total_marks": 76.0,
+        "coverage": 0.6842105263157895,
+        "precision": 0.875,
+        "recall": 0.5833333333333334
+       }
+      },
+      "top_ranking": [
+       "T26",
+       "T16",
+       "T06",
+       "T12",
+       "T19",
+       "T24",
+       "T23",
+       "T13"
+      ],
+      "duration_s": 0.007987192999999948
+     },
+     "tabpfn": {
+      "status": "unavailable",
+      "code": "package_missing",
+      "message": "tabpfn package not installed (pip install tabpfn; see docs/MODEL_SETUP.md)"
+     },
+     "random": {
+      "status": "ok",
+      "n_seeds": 20,
+      "metrics": {
+       "3": {
+        "coverage": 0.10789473684210527,
+        "coverage_std": 0.07134443006171556,
+        "precision": 0.4333333333333333,
+        "total_marks": 76.0
+       },
+       "5": {
+        "coverage": 0.17552631578947367,
+        "coverage_std": 0.09475548062267027,
+        "precision": 0.43000000000000005,
+        "total_marks": 76.0
+       },
+       "8": {
+        "coverage": 0.32447368421052636,
+        "coverage_std": 0.13464095066348822,
+        "precision": 0.475,
+        "total_marks": 76.0
+       }
+      }
+     }
+    }
+   }
+  ],
+  "aggregate": {
+   "naive_frequency": {
+    "n_folds": 5,
+    "n_folds_total": 5,
+    "folds_years": [
+     2019,
+     2020,
+     2021,
+     2022,
+     2023
+    ],
+    "by_k": {
+     "3": {
+      "mean_coverage": 0.23555996608482999,
+      "std_coverage": 0.0923562426312256
+     },
+     "5": {
+      "mean_coverage": 0.2854868102222004,
+      "std_coverage": 0.13119472698334303
+     },
+     "8": {
+      "mean_coverage": 0.5041199027391405,
+      "std_coverage": 0.1595359193744712
+     }
+    }
+   },
+   "recency_weighted": {
+    "n_folds": 5,
+    "n_folds_total": 5,
+    "folds_years": [
+     2019,
+     2020,
+     2021,
+     2022,
+     2023
+    ],
+    "by_k": {
+     "3": {
+      "mean_coverage": 0.25133139465625853,
+      "std_coverage": 0.0926357424863885
+     },
+     "5": {
+      "mean_coverage": 0.2961370845566853,
+      "std_coverage": 0.1105577245958323
+     },
+     "8": {
+      "mean_coverage": 0.45424182917685635,
+      "std_coverage": 0.11174302344008617
+     }
+    }
+   },
+   "logistic_regression": {
+    "n_folds": 5,
+    "n_folds_total": 5,
+    "folds_years": [
+     2019,
+     2020,
+     2021,
+     2022,
+     2023
+    ],
+    "by_k": {
+     "3": {
+      "mean_coverage": 0.19581174277726002,
+      "std_coverage": 0.0556624773166036
+     },
+     "5": {
+      "mean_coverage": 0.3440839750821602,
+      "std_coverage": 0.09143861659262734
+     },
+     "8": {
+      "mean_coverage": 0.502549734074235,
+      "std_coverage": 0.13749161792493816
+     }
+    }
+   },
+   "tabpfn": {
+    "n_folds": 0,
+    "n_folds_total": 5,
+    "folds_years": [],
+    "by_k": null
+   },
+   "random": {
+    "n_folds": 5,
+    "n_folds_total": 5,
+    "folds_years": [
+     2019,
+     2020,
+     2021,
+     2022,
+     2023
+    ],
+    "by_k": {
+     "3": {
+      "mean_coverage": 0.1036264031000147,
+      "std_coverage": 0.004359670794626488
+     },
+     "5": {
+      "mean_coverage": 0.1684387207534213,
+      "std_coverage": 0.007738861047150768
+     },
+     "8": {
+      "mean_coverage": 0.3017278828945617,
+      "std_coverage": 0.022323492187088553
+     }
+    }
+   }
+  },
+  "tabpfn_status": {
+   "available": false,
+   "code": "package_missing",
+   "message": "tabpfn package not installed (pip install tabpfn; see docs/MODEL_SETUP.md)"
+  }
+ },
+ "final": {
+  "data_fingerprint": "f5e74678afeaa8d00ec5bc2697d70616b8f12b4e257dada67503206129a083aa",
+  "n_years": 9,
+  "years": [
+   2016,
+   2017,
+   2018,
+   2019,
+   2020,
+   2021,
+   2022,
+   2023,
+   2024
+  ],
+  "status": "ok",
+  "which": "final",
+  "ks": [
+   3,
+   5,
+   8
+  ],
+  "final_holdout_year": 2024,
+  "min_history_years": 3,
+  "folds": [
+   {
+    "forecast_year": 2024,
+    "is_final_holdout": true,
+    "training_source_years": [
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022,
+     2023
+    ],
+    "training_target_years": [
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022,
+     2023
+    ],
+    "n_training_rows": 196,
+    "n_topics": 28,
+    "n_features": 15,
+    "held_out_total_marks": 80.0,
+    "models": {
+     "naive_frequency": {
+      "status": "ok",
+      "metrics": {
+       "3": {
+        "covered_marks": 24.0,
+        "total_marks": 80.0,
+        "coverage": 0.3,
+        "precision": 1.0,
+        "recall": 0.23076923076923078
+       },
+       "5": {
+        "covered_marks": 32.0,
+        "total_marks": 80.0,
+        "coverage": 0.4,
+        "precision": 0.8,
+        "recall": 0.3076923076923077
+       },
+       "8": {
+        "covered_marks": 50.0,
+        "total_marks": 80.0,
+        "coverage": 0.625,
+        "precision": 0.875,
+        "recall": 0.5384615384615384
+       }
+      },
+      "top_ranking": [
+       "T06",
+       "T26",
+       "T13",
+       "T15",
+       "T16",
+       "T19",
+       "T23",
+       "T24"
+      ],
+      "duration_s": 0.0011339430000001371
+     },
+     "recency_weighted": {
+      "status": "ok",
+      "metrics": {
+       "3": {
+        "covered_marks": 24.0,
+        "total_marks": 80.0,
+        "coverage": 0.3,
+        "precision": 1.0,
+        "recall": 0.23076923076923078
+       },
+       "5": {
+        "covered_marks": 38.0,
+        "total_marks": 80.0,
+        "coverage": 0.475,
+        "precision": 1.0,
+        "recall": 0.38461538461538464
+       },
+       "8": {
+        "covered_marks": 46.0,
+        "total_marks": 80.0,
+        "coverage": 0.575,
+        "precision": 0.75,
+        "recall": 0.46153846153846156
+       }
+      },
+      "top_ranking": [
+       "T06",
+       "T26",
+       "T13",
+       "T19",
+       "T09",
+       "T15",
+       "T21",
+       "T16"
+      ],
+      "duration_s": 0.0010392379999997203
+     },
+     "logistic_regression": {
+      "status": "ok",
+      "metrics": {
+       "3": {
+        "covered_marks": 24.0,
+        "total_marks": 80.0,
+        "coverage": 0.3,
+        "precision": 1.0,
+        "recall": 0.23076923076923078
+       },
+       "5": {
+        "covered_marks": 38.0,
+        "total_marks": 80.0,
+        "coverage": 0.475,
+        "precision": 1.0,
+        "recall": 0.38461538461538464
+       },
+       "8": {
+        "covered_marks": 48.4,
+        "total_marks": 80.0,
+        "coverage": 0.605,
+        "precision": 0.875,
+        "recall": 0.5384615384615384
+       }
+      },
+      "top_ranking": [
+       "T26",
+       "T06",
+       "T13",
+       "T19",
+       "T23",
+       "T15",
+       "T16",
+       "T12"
+      ],
+      "duration_s": 0.0074950110000004955
+     },
+     "tabpfn": {
+      "status": "unavailable",
+      "code": "package_missing",
+      "message": "tabpfn package not installed (pip install tabpfn; see docs/MODEL_SETUP.md)"
+     },
+     "random": {
+      "status": "ok",
+      "n_seeds": 20,
+      "metrics": {
+       "3": {
+        "coverage": 0.09375,
+        "coverage_std": 0.062005544106958695,
+        "precision": 0.3833333333333333,
+        "total_marks": 80.0
+       },
+       "5": {
+        "coverage": 0.16775,
+        "coverage_std": 0.0729121903387904,
+        "precision": 0.43000000000000005,
+        "total_marks": 80.0
+       },
+       "8": {
+        "coverage": 0.31100000000000005,
+        "coverage_std": 0.1124788869077215,
+        "precision": 0.5,
+        "total_marks": 80.0
+       }
+      }
+     }
+    }
+   }
+  ],
+  "aggregate": {
+   "naive_frequency": {
+    "n_folds": 1,
+    "n_folds_total": 1,
+    "folds_years": [
+     2024
+    ],
+    "by_k": {
+     "3": {
+      "mean_coverage": 0.3,
+      "std_coverage": 0.0
+     },
+     "5": {
+      "mean_coverage": 0.4,
+      "std_coverage": 0.0
+     },
+     "8": {
+      "mean_coverage": 0.625,
+      "std_coverage": 0.0
+     }
+    }
+   },
+   "recency_weighted": {
+    "n_folds": 1,
+    "n_folds_total": 1,
+    "folds_years": [
+     2024
+    ],
+    "by_k": {
+     "3": {
+      "mean_coverage": 0.3,
+      "std_coverage": 0.0
+     },
+     "5": {
+      "mean_coverage": 0.475,
+      "std_coverage": 0.0
+     },
+     "8": {
+      "mean_coverage": 0.575,
+      "std_coverage": 0.0
+     }
+    }
+   },
+   "logistic_regression": {
+    "n_folds": 1,
+    "n_folds_total": 1,
+    "folds_years": [
+     2024
+    ],
+    "by_k": {
+     "3": {
+      "mean_coverage": 0.3,
+      "std_coverage": 0.0
+     },
+     "5": {
+      "mean_coverage": 0.475,
+      "std_coverage": 0.0
+     },
+     "8": {
+      "mean_coverage": 0.605,
+      "std_coverage": 0.0
+     }
+    }
+   },
+   "tabpfn": {
+    "n_folds": 0,
+    "n_folds_total": 1,
+    "folds_years": [],
+    "by_k": null
+   },
+   "random": {
+    "n_folds": 1,
+    "n_folds_total": 1,
+    "folds_years": [
+     2024
+    ],
+    "by_k": {
+     "3": {
+      "mean_coverage": 0.09375,
+      "std_coverage": 0.0
+     },
+     "5": {
+      "mean_coverage": 0.16775,
+      "std_coverage": 0.0
+     },
+     "8": {
+      "mean_coverage": 0.31100000000000005,
+      "std_coverage": 0.0
+     }
+    }
+   }
+  },
+  "tabpfn_status": {
+   "available": false,
+   "code": "package_missing",
+   "message": "tabpfn package not installed (pip install tabpfn; see docs/MODEL_SETUP.md)"
+  }
+ }
+}

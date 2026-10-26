@@ -1,0 +1,19 @@
+[project]
+name = "repeat-offenders"
+version = "0.1.0"
+description = "Local-first study planner that measures which syllabus topics recur in past papers and backtests simple models against TabPFN."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+authors = [{ name = "Tharun Pandya Kodi" }]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 140
+extend-exclude = ["frontend", "eval"]
+
+[tool.ruff.lint]
+select = ["F", "E9"]
